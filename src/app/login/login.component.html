@@ -1,0 +1,37 @@
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+  <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+      <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Login</h1>
+      <div class="d-inline-flex mb-lg-5">
+          <p class="m-0 text-white"><a class="text-white" routerLink="/home">Home</a></p>
+          <p class="m-0 text-white px-2">/</p>
+          <p class="m-0 text-white">Login</p>
+      </div>
+  </div>
+</div>
+<!-- Page Header End -->
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Iniciar Sesión</h3>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="onLogin()">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
